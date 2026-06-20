@@ -47,7 +47,7 @@ export default function LiveClass() {
           <iframe
             width="100%"
             height="600"
-            src="https://www.youtube.com/embed/xFps6h4S-ic"
+            src="https://www.youtube.com/embed/AP5kn6FdoD4"
             title="Live Class"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
