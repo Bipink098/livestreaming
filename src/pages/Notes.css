@@ -1,0 +1,182 @@
+/* Notes Page Styles */
+.notes {
+  width: 100%;
+}
+
+.notes-hero {
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.notes-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.notes-hero p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+.notes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.note-card {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.note-card:hover {
+  border-color: #7c3aed;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.15);
+  transform: translateY(-5px);
+}
+
+.note-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.note-card h3 {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.note-card p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.download-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(124, 58, 237, 0.3);
+}
+
+.notes-filter {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.filter-button {
+  padding: 10px 20px;
+  border: 2px solid #e5e7eb;
+  background: #ffffff;
+  color: #1f2937;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  border-color: #7c3aed;
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .notes-hero {
+    padding: 60px 16px;
+  }
+
+  .notes-hero h1 {
+    font-size: 2rem;
+  }
+
+  .notes-container {
+    padding: 40px 16px;
+  }
+
+  .notes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .notes-filter {
+    gap: 8px;
+  }
+
+  .filter-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .notes-hero {
+    padding: 40px 12px;
+  }
+
+  .notes-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .notes-container {
+    padding: 30px 12px;
+  }
+
+  .notes-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .note-card {
+    padding: 20px;
+  }
+
+  .note-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .notes-filter {
+    flex-direction: column;
+  }
+
+  .filter-button {
+    width: 100%;
+  }
+}
