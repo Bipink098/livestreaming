@@ -57,6 +57,13 @@ export default function LiveClass() {
             title="Live Class"
             allowFullScreen
           />
+
+          <iframe
+            width="30%"
+            height="600"
+            src={`https://www.youtube.com/live_chat?v=${videoId}&embed_domain=livestreaming-nine.vercel.app`}
+            title="Live Chat"
+          />
         </div>
       ) : (
         <p>No Live Class Available</p>
