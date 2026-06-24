@@ -52,16 +52,16 @@ export default function LiveClass() {
       {videoId ? (
         <div className="live-video-wrapper">
           <iframe
-            width="100%"
-            height="600"
+            // width="100%"
+            // height="600"
             src={`https://www.youtube.com/embed/${videoId}`}
             title="Live Class"
             allowFullScreen
           />
 
           <iframe
-            width="30%"
-            height="600"
+            // width="30%"
+            // height="600"
             src={`https://www.youtube.com/live_chat?v=${videoId}&embed_domain=livestreaming-nine.vercel.app`}
             title="Live Chat"
           />
