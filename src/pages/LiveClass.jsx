@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { doc, onSnapshot, setDoc } from "firebase/firestore";
 import { db } from "../firebase/firebase";
+import "../pages/LiveClass.css";
 
 export default function LiveClass() {
   const [videoId, setVideoId] = useState("");
